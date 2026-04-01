@@ -1,0 +1,49 @@
+{
+    "name": "DemoBasePlate",
+    "operations": [
+        {
+            "type": "box",
+            "name": "plate",
+            "params": {
+                "length": 120,
+                "width": 80,
+                "height": 10
+            }
+        },
+        {
+            "type": "hole_pattern",
+            "name": "mounting_holes",
+            "target": "plate",
+            "params": {
+                "radius": 4,
+                "depth": 15,
+                "centers": [
+                    [
+                        40,
+                        30
+                    ],
+                    [
+                        40,
+                        -30
+                    ],
+                    [
+                        -40,
+                        30
+                    ],
+                    [
+                        -40,
+                        -30
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "fillet",
+            "name": "edge_fillets",
+            "target": "mounting_holes",
+            "params": {
+                "radius": 5
+            }
+        }
+    ]
+}
