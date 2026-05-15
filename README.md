@@ -1,6 +1,6 @@
 # VivaCAD-AI
 
-### ➢ Intelligent Text-to-CAD Automation Engine using NLP, FreeCAD & FastAPI
+### Intelligent Text-to-CAD Automation Engine using NLP, FreeCAD & FastAPI
 
 VivaCAD-AI is an advanced AI-assisted CAD automation framework designed to transform natural language engineering prompts into parametric 3D CAD models.
 
@@ -12,25 +12,25 @@ The primary objective of this project is to reduce repetitive manual drafting ef
 
 ## Core Features
 
-### ➢ Natural Language Driven CAD Generation
+### ➢  Natural Language Driven CAD Generation
 Transforms human-readable engineering prompts into executable CAD operations.
 
-### ➢ Parametric 3D Modeling
+### ➢  Parametric 3D Modeling
 Generates dimensionally accurate and editable parametric CAD geometries.
 
-### ➢ FreeCAD Python Automation
+### ➢  FreeCAD Python Automation
 Utilizes the FreeCAD Python API for automated model synthesis and geometry processing.
 
-### ➢ Full-Stack Architecture
+### ➢  Full-Stack Architecture
 Integrated frontend-backend ecosystem using React, FastAPI, and REST APIs.
 
-### ➢ Dockerized Deployment
+### ➢  Dockerized Deployment
 Supports reproducible and isolated deployment environments using Docker containers.
 
-### ➢ Hybrid AI + Rule-Based Validation
+### ➢  Hybrid AI + Rule-Based Validation
 Combines NLP interpretation with deterministic scripting logic to improve geometric reliability and reduce invalid model generation.
 
-### ➢ X11 GUI Forwarding Support
+### ➢  X11 GUI Forwarding Support
 Supports FreeCAD GUI rendering inside Docker containers using X11 forwarding for Linux-based environments.
 
 ---
