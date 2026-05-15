@@ -35,10 +35,10 @@ Supports FreeCAD GUI rendering inside Docker containers using X11 forwarding for
 
 ---
 
-# 🏗️ System Architecture
+# ➢ System Architecture
 
 ```text
-Natural Language Prompt
+   Natural Language Prompt
             │
             ▼
    NLP Interpretation Layer
@@ -47,13 +47,13 @@ Natural Language Prompt
  Structured Design Parameters
             │
             ▼
-   CAD Logic Generation Engine
+ CAD Logic Generation Engine
             │
             ▼
- FreeCAD Python Scripting Layer
+FreeCAD Python Scripting Layer
             │
             ▼
- Parametric 3D CAD Output* for logs and file paths of generated `.FCStd` and `.STEP` files.
+Parametric 3D CAD Output* for logs and file paths of generated `.FCStd` and `.STEP` files.
 
 ```
 <img width="1000" height="400" alt="0" src="https://github.com/user-attachments/assets/093556c8-2903-43ab-974e-db6e6b6a0333" />
