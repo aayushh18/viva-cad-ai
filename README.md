@@ -38,10 +38,10 @@ Supports FreeCAD GUI rendering inside Docker containers using X11 forwarding for
 # ➢ System Architecture
 
 ```text
-   Natural Language Prompt
+ Natural Language Prompt
             │
             ▼
-   NLP Interpretation Layer
+ NLP Interpretation Layer
             │
             ▼
  Structured Design Parameters
