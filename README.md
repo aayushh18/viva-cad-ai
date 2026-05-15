@@ -1,59 +1,73 @@
-# FREE CAD AI PRO
+# VivaCAD-AI
+### Intelligent Text-to-CAD Automation Engine using NLP, FreeCAD & FastAPI
 
-An enterprise-grade AI-powered CAD generation platform.
+VivaCAD-AI is an advanced AI-assisted CAD automation framework designed to transform natural language engineering prompts into parametric 3D CAD models.
 
-## Project Structure
+Developed during an industry research internship at the Bhabha Atomic Research Centre (BARC) in collaboration with Parul University, the system combines Natural Language Processing (NLP), deterministic geometric scripting, and CAD kernel automation to streamline mechanical design workflows.
 
-- `backend/`
-  - `main.py`: FastAPI server handling design lifecycle and API requests.
-  - `models.py`: SQLModel database schema for designs and iterations.
-  - `AIPromptEngine.py`: Integration with OpenAI (GPT-4o) for generating Structured JSON Mechanical Schema (SJMS).
-  - `FreeCADAdapter.py`: Logic to convert SJMS into FreeCAD Python scripts with visualization fixes and manifold exports.
-  - `requirements.txt`: Python dependencies.
-  - `.env`: Environment variables (API keys, FreeCAD path).
-- `frontend/`
-  - `src/App.tsx`: React frontend with history view, prompt input, and execution logs.
-  - `src/index.css`: Professional glassmorphic dark-mode styles.
-  - `package.json`: Frontend dependencies and Electron configuration.
-- `run.py`: Orchestration script to launch both backend and frontend services.
+The primary objective of this project is to reduce repetitive manual drafting efforts by enabling intelligent generation of CAD geometries directly from textual design specifications.
 
-## Prerequisites
+---
 
-- **FreeCAD**: Must be installed on your system.
-- **Python 3.10+**
-- **Node.js & npm**
-- **OpenAI API Key**
+## 🚀 Core Features
 
-## Setup & Execution
+### 🧠 Natural Language Driven CAD Generation
+Transforms human-readable engineering prompts into executable CAD operations.
 
-1. **Configure Environment**:
-   - Create a `.env` file in the `backend/` folder based on `.env.example`.
-   - Set your `OPENAI_API_KEY`.
-   - Ensure `FREECAD_PATH` points to your `freecadcmd` executable.
+### ⚙️ Parametric 3D Modeling
+Generates dimensionally accurate and editable parametric CAD geometries.
 
-2. **Install Dependencies**:
-   - Backend: `pip install -r backend/requirements.txt`
-   - Frontend: `npm install` inside the `frontend/` folder.
+### 🔧 FreeCAD Python Automation
+Utilizes the FreeCAD Python API for automated model synthesis and geometry processing.
 
-3. **Run the Application (via Terminal)**:
-   - Open your terminal.
-   - Navigate to the project root directory:
-     ```bash
-     cd /path/to/viva-cad-ai
-     ```
-   - Run the orchestration script:
-     ```bash
-     python3 run.py
-     ```
-   - This will start both the backend FastAPI server and the frontend development server automatically.
+### 🌐 Full-Stack Architecture
+Integrated frontend-backend ecosystem using React, FastAPI, and REST APIs.
 
-## Usage
+### 📦 Dockerized Deployment
+Supports reproducible and isolated deployment environments using Docker containers.
 
-- Enter a prompt to generate CAD models. Example commands:
-  - `"Create a box with length 120, width 80, and height 10"`
-  - `"Create a plate 120x80 with 4 holes"`
-  - `"Make a cylinder with radius 15 and height 50"`
-  - `"Create a 100x100x100 box with a 10mm fillet on the top edges"`
-- View the generated **SJMS Schema**.
-- Click **Build in FreeCAD** to generate the model and see visualization in your FreeCAD GUI (if running).
-- Check the **Execution Logs** for logs and file paths of generated `.FCStd` and `.STEP` files.
+### 🛡️ Hybrid AI + Rule-Based Validation
+Combines NLP interpretation with deterministic scripting logic to improve geometric reliability and reduce invalid model generation.
+
+### 🖥️ X11 GUI Forwarding Support
+Supports FreeCAD GUI rendering inside Docker containers using X11 forwarding for Linux-based environments.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Natural Language Prompt
+            │
+            ▼
+   NLP Interpretation Layer
+            │
+            ▼
+ Structured Design Parameters
+            │
+            ▼
+   CAD Logic Generation Engine
+            │
+            ▼
+ FreeCAD Python Scripting Layer
+            │
+            ▼
+ Parametric 3D CAD Output* for logs and file paths of generated `.FCStd` and `.STEP` files.
+
+<img width="1206" height="452" alt="4" src="https://github.com/user-attachments/assets/1d74c7ff-e661-4a04-a39d-ec46a7d27196" />
+<img width="1208" height="730" alt="3" src="https://github.com/user-attachments/assets/b143ee17-acd7-4b49-b0c9-a1494c45bad6" />
+<img width="1211" height="725" alt="2" src="https://github.com/user-attachments/assets/9d0c6873-39e4-45b1-b886-480ff163fbcb" />
+<img width="1208" height="730" alt="0" src="https://github.com/user-attachments/assets/093556c8-2903-43ab-974e-db6e6b6a0333" />
+
+## 🛠️ Tech Stack
+- Python
+- FastAPI
+- React.js
+- FreeCAD API
+- Docker
+- MongoDB
+- HuggingFace Transformers
+
+## 🔬 Research Background
+Developed during an industry internship at Bhabha Atomic Research Centre (BARC), Mumbai under the Nuclear Recycle Group (NRG), Government of India.
+
