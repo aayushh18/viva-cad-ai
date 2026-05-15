@@ -54,6 +54,7 @@ Natural Language Prompt
             ▼
  Parametric 3D CAD Output* for logs and file paths of generated `.FCStd` and `.STEP` files.
 
+```
 <img width="1206" height="452" alt="4" src="https://github.com/user-attachments/assets/1d74c7ff-e661-4a04-a39d-ec46a7d27196" />
 <img width="1208" height="730" alt="3" src="https://github.com/user-attachments/assets/b143ee17-acd7-4b49-b0c9-a1494c45bad6" />
 <img width="1211" height="725" alt="2" src="https://github.com/user-attachments/assets/9d0c6873-39e4-45b1-b886-480ff163fbcb" />
